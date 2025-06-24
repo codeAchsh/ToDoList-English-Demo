@@ -1,0 +1,88 @@
+/* === About Color Patterns ===
+
+This file includes three sample color themes for the To Do List template:
+- Orange theme
+- Blue theme
+- Yellow theme
+
+---
+
+■ How to Use ■
+
+1. In the :root selector of your CSS file, you will find three color blocks.
+   Uncomment the block of the theme you want to use by removing the /* ... */.
+
+2. Keep the other two themes commented out.
+   If multiple themes are enabled at once, styles may not display correctly.
+
+3. You can easily switch the theme by modifying the following CSS variables:
+
+   --main-bg     : Background color (e.g., for .todo-list background)
+   --btn-bg      : Button background color
+   --btn-color   : Button text color
+   --h2-color    : Text color for h2 headings
+   --h2-hover-bg : Background color when hovering editable h2
+
+4. Because colors are assigned using variables,
+   you can update the entire color scheme consistently by changing just these values.
+
+---
+
+Feel free to customize the design or adjust the template to fit your needs.  
+If you have any questions, don't hesitate to reach out.
+
+********************************************************************/
+
+/* === Color Theme Examples === */
+
+/* Orange Theme (currently active) */
+:root {
+  --main-bg: papayawhip;       /* Background color */
+  --btn-bg: #f28b82;           /* Button background */
+  --btn-color: #fff;           /* Button text color */
+  --h2-color: #555;            /* h2 text color */
+  --h2-hover-bg: rgb(253, 204, 162);
+}
+
+/* Blue Theme */
+/*
+:root {
+  --main-bg: #e0f0ff;          /* Light blue */
+  --btn-bg: #4a90e2;           /* Blue */
+  --btn-color: #fff;
+  --h2-color: #345678;
+  --h2-hover-bg: #a7c7ff;
+}
+*/
+
+/* Yellow Theme */
+/*
+:root {
+  --main-bg: #fff9e6;          /* Light cream yellow */
+  --btn-bg: #f7c948;           /* Bright yellow-orange */
+  --btn-color: #333;
+  --h2-color: #665500;
+  --h2-hover-bg: #ffe08a;
+}
+*/
+
+/* === Usage Example ===
+To apply the variables, use them like this:
+
+body {
+  background: var(--main-bg);
+}
+
+button {
+  background: var(--btn-bg);
+  color: var(--btn-color);
+}
+
+h2 {
+  color: var(--h2-color);
+}
+
+h2[contenteditable="true"]:hover {
+  background-color: var(--h2-hover-bg);
+}
+*/

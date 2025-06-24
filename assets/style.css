@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fdfdf8;
+  font-family: 'Noto Sans JP', sans-serif;
+  padding: 2rem;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.notice {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.todo-list {
+  max-width: 500px;
+  margin: auto;
+  background: papayawhip;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.todo-add {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.todo-add input {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background: #f28b82;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+h2 {
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  text-align: center;
+  position: relative;
+}
+
+h2[contenteditable="true"]:hover {
+  background-color: rgba(253, 204, 162, 0.5);
+  cursor: text;
+  outline: 1px dashed #999;
+}
+
+.todo-section {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-section li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  display: flex;
+}
+
+input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+  .todo-list {
+    padding: 1rem;
+  }
+  .todo-add {
+    flex-direction: column;
+  }
+  button {
+    width: 100%;
+  }
+}

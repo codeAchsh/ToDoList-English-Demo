@@ -1,0 +1,26 @@
+# OS and editor-related files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# node_modules (if using JavaScript package managers)
+node_modules/
+
+# Build output or generated files (if using build tools)
+dist/
+build/
+
+# Temporary files and cache
+*.tmp
+*.temp
+*.swp
+*.bak
+
+# Environment configuration files (if settings differ per environment)
+.env
+
+# Other user-specific files
+*.sublime-project
+*.sublime-workspace

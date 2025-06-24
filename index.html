@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Demo: Simple and easy-to-use To Do List. Try shopping and housework lists." />
+  <meta name="author" content="codeAchsh" />
+  <link rel="shortcut icon" href="assets/images/check.ico" />
+  <link rel="stylesheet" href="assets/style.css" />
+  <title>To Do List (Demo)</title>
+</head>
+<body>
+  <header>
+    <h1>To Do List (Demo)</h1>
+    <p class="notice">
+      * This demo saves data temporarily in your browser.<br />
+      For long-term saving and managing multiple lists, please use the full version.<br />
+      👉 <a href="https://achshcode.gumroad.com/l/qkojqu" target="_blank">See the full version on Gumroad</a>
+    </p>
+  </header>
+
+  <main>
+    <section class="todo-list">
+      <div class="list-1">
+        <h2 contenteditable="true">🛒 Shopping List (Editable)</h2>
+        <div class="todo-add">
+          <input type="text" id="shopping-input" placeholder="Enter an item" />
+          <button onclick="addShoppingItem()">Add</button>
+        </div>
+        <ul class="todo-section" id="shopping-list"></ul>
+        <button onclick="removeCheckedItems('shopping-list')">🗑️ Remove Completed Items</button>
+      </div>
+
+      <div class="list-2">
+        <h2 contenteditable="true">🧹 Housework List (Editable)</h2>
+        <div class="todo-add">
+          <input type="text" id="housework-input" placeholder="Enter an item" />
+          <button onclick="addHouseworkItem()">Add</button>
+        </div>
+        <ul class="todo-section" id="housework-list"></ul>
+        <button onclick="removeCheckedItems('housework-list')">🗑️ Remove Completed Items</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 <a href="mailto:code.achsh@gmail.com">code.achsh@gmail.com</a></p>
+  </footer>
+
+  <script src="js/javascript-en.js"></script>
+</body>
+</html>
