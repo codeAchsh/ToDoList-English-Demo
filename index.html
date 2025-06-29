@@ -1,44 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Demo: Simple and easy-to-use To Do List. Try shopping and housework lists." />
+  <meta name="description" content="デモ用：シンプルで使いやすいTo Do List。買い物リスト・家事リストの体験ができます。" />
   <meta name="author" content="codeAchsh" />
   <link rel="shortcut icon" href="assets/images/check.ico" />
   <link rel="stylesheet" href="assets/style.css" />
-  <title>To Do List (Demo)</title>
+  
+<!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QHK3SJRH40"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-QHK3SJRH40');
+  </script>
+
+  <title>To Do List（デモ版）</title>
 </head>
 <body>
   <header>
-    <h1>To Do List (Demo)</h1>
+    <h1>To Do List（デモ版）</h1>
     <p class="notice">
-      * This demo saves data temporarily in your browser.<br />
-      For long-term saving and managing multiple lists, please use the full version.<br />
-      👉 <a href="https://achshcode.gumroad.com/l/qkojqu" target="_blank">See the full version on Gumroad</a>
+      ※このデモではブラウザに一時保存されますが、<br />
+      長期保存や複数作品の管理には完全版をご利用ください。<br />
+      👉 <a href="https://achshcode.gumroad.com/l/bcpsv" target="_blank">Gumroadで完全版を見る</a>
     </p>
   </header>
 
   <main>
     <section class="todo-list">
       <div class="list-1">
-        <h2 contenteditable="true">🛒 Shopping List (Editable)</h2>
+        <h2 contenteditable="true">🛒 買い物メモ（カスタマイズ可）</h2>
         <div class="todo-add">
-          <input type="text" id="shopping-input" placeholder="Enter an item" />
-          <button onclick="addShoppingItem()">Add</button>
+          <input type="text" id="shopping-input" placeholder="リストを入力" />
+          <button onclick="addShoppingItem()">追加</button>
         </div>
         <ul class="todo-section" id="shopping-list"></ul>
-        <button onclick="removeCheckedItems('shopping-list')">🗑️ Remove Completed Items</button>
+        <button onclick="removeCheckedItems('shopping-list')">🗑️ 完了したリストを削除</button>
       </div>
 
       <div class="list-2">
-        <h2 contenteditable="true">🧹 Housework List (Editable)</h2>
+        <h2 contenteditable="true">🧹 家事リスト（カスタマイズ可）</h2>
         <div class="todo-add">
-          <input type="text" id="housework-input" placeholder="Enter an item" />
-          <button onclick="addHouseworkItem()">Add</button>
+          <input type="text" id="housework-input" placeholder="リストを入力" />
+          <button onclick="addHouseworkItem()">追加</button>
         </div>
         <ul class="todo-section" id="housework-list"></ul>
-        <button onclick="removeCheckedItems('housework-list')">🗑️ Remove Completed Items</button>
+        <button onclick="removeCheckedItems('housework-list')">🗑️ 完了したリストを削除</button>
       </div>
     </section>
   </main>
@@ -47,6 +58,6 @@
     <p>&copy; 2025 <a href="mailto:code.achsh@gmail.com">code.achsh@gmail.com</a></p>
   </footer>
 
-  <script src="js/javascript-en.js"></script>
+  <script src="js/javascript.js"></script>
 </body>
 </html>
